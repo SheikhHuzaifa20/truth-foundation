@@ -18,39 +18,39 @@
                     </li>
 
                     {{-- Permission Management --}}
-                    @canAccess('manage_permissions')
+                    {{-- @canAccess('manage_permissions')
                         <li class="{{ request()->routeIs('admin.permissions.*') ? 'active' : '' }}">
                             <a class="menu-item" href="{{ route('admin.permissions.index') }}">
                                 <i></i><span>Permission Management</span>
                             </a>
                         </li>
-                    @endcanAccess
+                    @endcanAccess --}}
 
                     {{-- Favicon Management --}}
                     @canAccess('view_favicon')
-                        <li class="{{ request()->routeIs('admin.favicon.edit') ? 'active' : '' }}">
-                            <a class="menu-item" href="{{ route('admin.favicon.edit') }}">
-                                <i></i><span>Favicon Management</span>
-                            </a>
-                        </li>
+                    <li class="{{ request()->routeIs('admin.favicon.edit') ? 'active' : '' }}">
+                        <a class="menu-item" href="{{ route('admin.favicon.edit') }}">
+                            <i></i><span>Favicon Management</span>
+                        </a>
+                    </li>
                     @endcanAccess
 
                     {{-- Logo Management --}}
                     @canAccess('view_logo')
-                        <li class="{{ request()->routeIs('admin.logo.edit') ? 'active' : '' }}">
-                            <a class="menu-item" href="{{ route('admin.logo.edit') }}">
-                                <i></i><span>Logo Management</span>
-                            </a>
-                        </li>
+                    <li class="{{ request()->routeIs('admin.logo.edit') ? 'active' : '' }}">
+                        <a class="menu-item" href="{{ route('admin.logo.edit') }}">
+                            <i></i><span>Logo Management</span>
+                        </a>
+                    </li>
                     @endcanAccess
 
                     {{-- User Management --}}
                     @canAccess('view_users')
-                        <li class="{{ request()->routeIs('admin.users.*') ? 'active' : '' }}">
-                            <a class="menu-item" href="{{ route('admin.users.index') }}">
-                                <i></i><span>User Management</span>
-                            </a>
-                        </li>
+                    <li class="{{ request()->routeIs('admin.users.*') ? 'active' : '' }}">
+                        <a class="menu-item" href="{{ route('admin.users.index') }}">
+                            <i></i><span>User Management</span>
+                        </a>
+                    </li>
                     @endcanAccess
 
                     {{-- Role Management --}}
@@ -87,11 +87,11 @@
                             <span>Contact Inquiries</span>
                         </a>
                     </li>
-                    <li class="{{ request()->routeIs('admin.newsletter.inquiries*') ? 'active' : '' }}">
+                    {{-- <li class="{{ request()->routeIs('admin.newsletter.inquiries*') ? 'active' : '' }}">
                         <a class="menu-item" href="{{ route('admin.newsletter.inquiries') }}"><i></i>
                             <span>Newsletter Inquiries</span>
                         </a>
-                    </li>
+                    </li> --}}
                 </ul>
             </li>
 
@@ -108,7 +108,7 @@
             </li>
 
             {{-- Ecommerce --}}
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a href="javascript:;"><i class="la la-shopping-cart"></i><span class="menu-title">Ecommerce</span></a>
                 <ul class="menu-content">
                     <li class="{{ request()->routeIs('admin.attribute.*') ? 'active' : '' }}">
@@ -130,7 +130,7 @@
                         <a class="menu-item" href="{{ route('admin.orders.index') }}"><i></i><span>Orders</span></a>
                     </li>
                 </ul>
-            </li>
+            </li> --}}
 
             {{-- Testimonial --}}
             @canAccess('view_testimonial')
@@ -143,11 +143,22 @@
             @endcanAccess
 
             {{-- Activity --}}
-            @canAccess('view_activity')
+            {{-- @canAccess('view_activity')
             <li class="nav-item {{ request()->routeIs('admin.activity.logs.*') ? 'active' : '' }}">
                 <a href="{{ route('admin.activity.logs.index') }}">
                     <i class="la la-cube"></i>
                     <span class="menu-title">Activity Logs</span>
+                </a>
+            </li>
+            @endcanAccess --}}
+
+
+            {{-- Blog --}}
+            @canAccess('view_blog')
+            <li class="nav-item {{ request()->routeIs('admin.blog.*') ? 'active' : '' }}">
+                <a href="{{ route('admin.blog.index') }}">
+                    <i class="la la-cube"></i>
+                    <span class="menu-title">Blog</span>
                 </a>
             </li>
             @endcanAccess

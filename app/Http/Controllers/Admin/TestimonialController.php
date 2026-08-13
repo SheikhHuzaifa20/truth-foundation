@@ -93,6 +93,8 @@ class TestimonialController extends Controller
     public function store(StoreTestimonialRequest $request)
     {
         $data = $request->validated();
+        $data['customer_name'] = $request->customer_name;
+        $data['customer_profession'] = $request->customer_profession;
 
         if ($request->hasFile('image')) {
             $data['image'] = $this->uploadFile($request->file('image'), 'uploads/testimonial/', 'testimonial');
@@ -119,6 +121,8 @@ class TestimonialController extends Controller
     public function update(UpdateTestimonialRequest $request, Testimonial $testimonial)
     {
         $data = $request->validated();
+        $data['customer_name'] = $request->customer_name;
+        $data['customer_profession'] = $request->customer_profession;
 
         if ($request->hasFile('image')) {
             $this->deleteFile($testimonial->image);

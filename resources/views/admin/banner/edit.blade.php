@@ -51,6 +51,12 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
+                                                <label for="title">Heading 2</label>
+                                                <input class="form-control" required="required" name="heading" type="text" id="heading" value="{{$banner->heading}}">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
                                                 <label for="summary-ckeditor">Description</label>
                                                 <textarea name="description" id="summary-ckeditor" cols="30" rows="10" class="form-control" required>{{$banner->description}}</textarea>
                                             </div>

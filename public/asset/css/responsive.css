@@ -1,0 +1,1203 @@
+/* =========================================
+   AUTHOR - LARGE DESKTOP
+========================================= */
+
+@media (max-width: 1640px) {
+
+.author-monogram {
+    font-size: 510px !important;
+}
+
+section.author-section {
+    height: 850px !important;
+}
+
+.book-content p {width: 58% !important;}
+}
+@media (max-width: 1440px) {
+    .author-section {
+    height: 800px;
+}
+
+.author-monogram {
+    font-size: 440px;
+}
+
+.author-text h1 {
+    padding-top: 100px;
+}
+
+.author-text {
+    top: 15%;
+    /* transform: translateY(-40%); */
+}
+
+.book-content p {
+    width: 70%;
+}
+
+}
+@media (min-width: 1400px) {
+
+    .author-logo {
+        top: 22px;
+        left: 55px;
+    }
+
+    .author-logo img {
+        width: 145px;
+    }
+
+    .author-text {
+        left: 55px;
+        right: 45px;
+        top: 100px;
+        /* transform: translateY(-40%); */
+    }
+
+    .author-monogram {
+        font-size: 626px;
+        margin-bottom: 98px;
+        /* line-height: 0.78; */
+        letter-spacing: 20px;
+    }
+
+    .author-text h1 {
+        font-size: 80px;
+
+        line-height: 1;
+    }
+
+    .author-text p {
+        width: 380px;
+
+        margin-top: 34px;
+
+        font-size: 13px;
+    }
+
+    .menu-button {
+        top: 33px;
+        right: 55px;
+    }
+}
+
+
+/* =========================================
+   AUTHOR - TABLET
+========================================= */
+
+@media (max-width: 991.98px) {
+
+    .author-section {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .author-content {
+        height: 65vh;
+        min-height: 550px;
+    }
+
+    .author-image-wrapper {
+        height: 70vh;
+        min-height: 550px;
+    }
+
+    .author-text {
+        top: 53%;
+
+        transform: translateY(-40%);
+    }
+
+    .author-monogram {
+        font-size: clamp(190px, 25vw, 300px);
+
+        line-height: 0.78;
+
+        margin-bottom: 25px;
+
+        letter-spacing: -20px;
+    }
+
+    .author-text h1 {
+        font-size: clamp(55px, 8vw, 75px);
+
+        line-height: 1;
+    }
+
+    .author-img {
+        object-position: center top;
+    }
+}
+
+
+/* =========================================
+   AUTHOR - MOBILE
+========================================= */
+
+@media (max-width: 575.98px) {
+
+    .author-section {
+        min-height: auto;
+        overflow: visible;
+    }
+
+    .author-content {
+        height: 600px;
+        min-height: 600px;
+    }
+
+    .author-image-wrapper {
+        height: 600px;
+        min-height: 600px;
+    }
+
+
+    /* Logo */
+
+    .author-logo {
+        top: 20px;
+        left: 25px;
+    }
+
+    .author-logo img {
+        width: 115px;
+    }
+
+
+    /* Text */
+
+    .author-text {
+        left: 25px;
+        right: 20px;
+
+        top: 52%;
+
+        transform: translateY(-40%);
+    }
+
+
+    /* QM */
+
+    .author-monogram {
+        margin-left: -15px;
+
+        margin-bottom: 20px;
+
+        font-size: 210px;
+
+        line-height: 0.78;
+
+        letter-spacing: -18px;
+    }
+
+
+    /* Name */
+
+    .author-text h1 {
+        font-size: 52px;
+
+        line-height: 1;
+
+        letter-spacing: -2px;
+    }
+
+
+    /* Description */
+
+    .author-text p {
+        width: 300px;
+
+        margin-top: 25px;
+
+        font-size: 12px;
+    }
+
+
+    /* Menu */
+
+    .menu-button {
+        top: 25px;
+        right: 25px;
+    }
+
+
+    /* Author image */
+
+    .author-img {
+        object-position: center top;
+    }
+}
+
+
+/* =========================================
+   ABOUT - LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1400px) {
+
+    .about-image-wrapper {
+        top: 65px;
+        left: -237px;
+        width: 410px;
+        height: 546px;
+        padding: 6px;
+    }
+
+    .about-content {
+        left: 250px;
+
+        width: 500px;
+    }
+
+    .about-content h2 {
+        font-size: 56px;
+
+        margin-bottom: 25px;
+    }
+
+    .about-content p {
+        width: 500px;
+
+        font-size: 12px;
+
+        line-height: 1.5;
+
+        margin-bottom: 22px;
+    }
+}
+
+
+/* =========================================
+   ABOUT - TABLET
+========================================= */
+
+@media (max-width: 1199.98px) and (min-width: 992px) {
+
+    .about-image-wrapper {
+        top: 80px;
+
+        left: -190px;
+
+        width: 380px;
+        height: 510px;
+
+        padding: 6px;
+    }
+
+    .about-content {
+        left: 220px;
+
+        width: 450px;
+    }
+
+    .about-content h2 {
+        font-size: 50px;
+    }
+
+    .about-content p {
+        width: 450px;
+
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================
+   ABOUT - TABLET / MOBILE
+========================================= */
+
+@media (max-width: 991.98px) {
+
+    .about-section {
+        height: auto;
+        min-height: auto;
+
+        overflow: visible;
+    }
+
+    .about-orange {
+        height: 180px;
+        min-height: 180px;
+    }
+
+    .about-main {
+        height: auto;
+        min-height: auto;
+
+        padding: 60px 30px 70px;
+    }
+
+
+    /* Image */
+
+    .about-image-wrapper {
+        position: relative;
+
+        top: auto;
+        left: auto;
+
+        width: 100%;
+        max-width: 500px;
+
+        height: auto;
+
+        aspect-ratio: 410 / 546;
+
+        margin: 0 auto 55px;
+
+        padding: 6px;
+    }
+
+
+    /* Text */
+
+    .about-content {
+        position: relative;
+
+        top: auto;
+        left: auto;
+
+        width: 100%;
+
+        transform: none;
+
+        max-width: 600px;
+
+        margin: 0 auto;
+    }
+
+    .about-content h2 {
+        font-size: 48px;
+
+        letter-spacing: -1.5px;
+
+        margin-bottom: 25px;
+    }
+
+    .about-content p {
+        width: 100%;
+
+        font-size: 13px;
+
+        line-height: 1.55;
+
+        margin-bottom: 22px;
+    }
+}
+
+
+/* =========================================
+   ABOUT - MOBILE
+========================================= */
+
+@media (max-width: 575.98px) {
+
+    .about-orange {
+        height: 120px;
+        min-height: 120px;
+    }
+
+    .about-main {
+        padding: 40px 20px 55px;
+    }
+
+
+    /* Image */
+
+    .about-image-wrapper {
+        width: 100%;
+
+        max-width: 100%;
+
+        aspect-ratio: 410 / 546;
+
+        margin-bottom: 40px;
+
+        padding: 5px;
+    }
+
+
+    /* Heading */
+
+    .about-content h2 {
+        font-size: 42px;
+
+        line-height: 1.05;
+
+        letter-spacing: -1px;
+
+        margin-bottom: 22px;
+    }
+
+
+    /* Paragraph */
+
+    .about-content p {
+        font-size: 12px;
+
+        line-height: 1.55;
+
+        margin-bottom: 20px;
+    }
+}
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1400px) {
+
+    .customers-container {
+        width: min(1240px, calc(100% - 60px));
+    }
+
+    .customer-card {
+        flex-basis: 340px;
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991.98px) {
+
+    .customers-container {
+        width: min(100% - 40px, 720px);
+    }
+
+    .customers-track {
+        gap: 18px;
+        animation-duration: 24s;
+    }
+
+    .customer-card {
+        flex-basis: 300px;
+        padding: 27px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767.98px) {
+
+    .customers-section {
+        padding: 65px 0;
+    }
+
+    .customers-container {
+        width: calc(100% - 30px);
+    }
+
+    .customers-header {
+        margin-bottom: 40px;
+    }
+
+    .customers-intro {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .customers-track {
+        gap: 15px;
+        animation-duration: 20s;
+    }
+
+    .customer-card {
+        flex-basis: min(290px, calc(100vw - 50px));
+        padding: 25px;
+    }
+
+    .customer-heading {
+        font-size: 18px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 575.98px) {
+
+    .customers-section {
+        padding: 55px 0;
+    }
+
+    .customers-container {
+        width: calc(100% - 24px);
+    }
+
+    .customers-label {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .customers-title {
+        font-size: 35px;
+    }
+
+    .customers-intro {
+        font-size: 12px;
+    }
+
+    .customer-card {
+        flex-basis: calc(100vw - 45px);
+        padding: 23px;
+    }
+
+    .customer-stars {
+        width: 80px;
+    }
+
+}
+/* =========================================
+   CONTACT - LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1400px) {
+
+    .contact-form-box {
+        top: 86px;
+
+        left: -326px;
+
+        width: 578px;
+
+        height: 528px;
+
+        padding: 48px 44px;
+    }
+
+    .contact-info {
+        top: 110px;
+        left: 298px;
+    }
+
+}
+
+
+/* =========================================
+   CONTACT - TABLET
+========================================= */
+
+@media (max-width: 1199.98px) and (min-width: 992px) {
+
+    .contact-form-box {
+        left: -280px;
+
+        width: 540px;
+
+        padding: 45px 40px;
+    }
+
+    .contact-info {
+        left: 275px;
+
+        width: 350px;
+    }
+
+    .contact-info h3 {
+        font-size: 35px;
+    }
+
+}
+
+
+/* =========================================
+   CONTACT - TABLET / MOBILE
+========================================= */
+
+@media (max-width: 991.98px) {
+
+    .contact-section {
+        height: auto;
+
+        overflow: visible;
+    }
+
+    .contact-orange {
+        height: 180px;
+    }
+
+    .contact-main {
+        height: auto;
+
+        padding: 0 30px 70px;
+    }
+
+
+    /* Form */
+
+    .contact-form-box {
+        position: relative;
+
+        top: auto;
+        left: auto;
+
+        width: 100%;
+
+        max-width: 578px;
+
+        height: auto;
+
+        min-height: 528px;
+
+        margin: -95px auto 60px;
+
+        padding: 45px 40px;
+    }
+
+
+    /* Info */
+
+    .contact-info {
+        position: relative;
+
+        top: auto;
+        left: auto;
+
+        width: 100%;
+
+        max-width: 578px;
+
+        margin: 0 auto;
+    }
+
+    .contact-info h3 {
+        font-size: 40px;
+
+        margin-bottom: 30px;
+    }
+
+    .contact-intro {
+        margin-bottom: 45px;
+    }
+
+}
+
+
+/* =========================================
+   CONTACT - MOBILE
+========================================= */
+
+@media (max-width: 575.98px) {
+
+    .contact-orange {
+        height: 120px;
+    }
+
+    .contact-main {
+        padding: 0 20px 60px;
+    }
+
+
+    /* Form */
+
+    .contact-form-box {
+        min-height: auto;
+
+        margin-top: -65px;
+
+        margin-bottom: 50px;
+
+        padding: 35px 25px;
+    }
+
+    .contact-form-box h2 {
+        font-size: 42px;
+
+        margin-bottom: 30px;
+    }
+
+
+    /* Name fields */
+
+    .contact-name-row {
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+    .contact-name-row input {
+        margin-bottom: 14px;
+    }
+
+
+    .contact-form-box input {
+        height: 43px;
+    }
+
+    .contact-form-box textarea {
+        height: 140px;
+    }
+
+
+    /* Info */
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-info h3 {
+        font-size: 36px;
+
+        margin-bottom: 28px;
+    }
+
+    .contact-intro {
+        font-size: 10px;
+
+        margin-bottom: 40px;
+    }
+
+
+    /* Items */
+
+    .contact-item {
+        margin-bottom: 27px;
+    }
+
+    .contact-icon {
+        width: 46px;
+        height: 46px;
+    }
+
+    .contact-item-text {
+        margin-left: 18px;
+    }
+
+    .contact-item-text p {
+        font-size: 10px;
+    }
+
+
+    /* Footer */
+
+    .site-footer {
+        height: 65px;
+    }
+
+    .site-footer p {
+        font-size: 10px;
+    }
+
+}
+
+
+/* =========================================
+   PAUSE SLIDER ON HOVER
+========================================= */
+
+.customers-slider:hover .customers-track {
+    animation-play-state: paused;
+}
+
+
+
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1400px) {
+
+    .articles-section {
+        padding-top: 120px;
+
+        padding-bottom: 130px;
+    }
+
+
+    .articles-container {
+        max-width: 1080px;
+    }
+
+
+    .articles-header {
+        margin-bottom: 75px;
+    }
+
+
+    .articles-label {
+        margin-bottom: 24px;
+    }
+
+
+    .articles-header h2 {
+        font-size: 62px;
+    }
+
+
+    .articles-header p {
+        max-width: 480px;
+
+        margin-top: 30px;
+    }
+
+
+    .article-content {
+        padding: 40px 38px 43px;
+    }
+
+
+    .article-content h3 {
+        font-size: 38px;
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991.98px) {
+
+    .articles-section {
+        padding: 80px 0 90px;
+    }
+
+
+    .articles-container {
+        max-width: 100%;
+
+        padding: 0 25px;
+    }
+
+
+    /* HEADER */
+
+    .articles-header {
+        margin-bottom: 55px;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    .articles-label {
+        margin-bottom: 20px;
+    }
+
+
+    .articles-header h2 {
+        font-size: 50px;
+
+        line-height: 1.05;
+
+        letter-spacing: -1.5px;
+    }
+
+
+    .articles-header p {
+        max-width: 560px;
+
+        margin: 25px auto 0;
+
+        font-size: 11px;
+
+        line-height: 1.7;
+    }
+
+
+    /* GRID */
+
+    .articles-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 22px;
+    }
+
+
+    /* CONTENT */
+
+    .article-content {
+        padding: 30px 25px 32px;
+    }
+
+
+    .article-content h3 {
+        font-size: 30px;
+
+        line-height: 1.08;
+    }
+
+
+    .article-content p {
+        font-size: 10px;
+
+        line-height: 1.75;
+    }
+
+
+    /* FOOTNOTE */
+
+    .articles-note {
+        margin-top: 45px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767.98px) {
+
+    .articles-section {
+        padding: 65px 0 75px;
+    }
+
+
+    .articles-container {
+        padding: 0 20px;
+    }
+
+
+    /* HEADER */
+
+    .articles-header {
+        margin-bottom: 42px;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    .articles-label {
+        font-size: 9px;
+
+        letter-spacing: 2.5px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .articles-header h2 {
+        font-size: 43px;
+
+        line-height: 1.05;
+
+        letter-spacing: -1px;
+    }
+
+
+    .articles-header p {
+        font-size: 11px;
+
+        line-height: 1.7;
+
+        margin-top: 22px;
+    }
+
+
+    /* GRID */
+
+    .articles-grid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    /* IMAGE */
+
+    .article-image img {
+        aspect-ratio: 1.4 / 1;
+    }
+
+
+    /* CONTENT */
+
+    .article-content {
+        padding: 30px 25px 34px;
+    }
+
+
+    .article-content h3 {
+        font-size: 32px;
+
+        line-height: 1.08;
+    }
+
+
+    .article-content p {
+        font-size: 11px;
+
+        line-height: 1.75;
+    }
+
+
+    /* FOOTNOTE */
+
+    .articles-note {
+        margin-top: 40px;
+
+        gap: 12px;
+    }
+
+
+    .articles-note > span {
+        width: 25px;
+
+        flex-basis: 25px;
+    }
+
+
+    .articles-note p {
+        font-size: 9px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 575.98px) {
+
+    .articles-section {
+        padding: 55px 0 65px;
+    }
+
+
+    .articles-container {
+        padding: 0 18px;
+    }
+
+
+    /* HEADER */
+
+    .articles-header {
+        margin-bottom: 38px;
+    }
+
+
+    .articles-label {
+        font-size: 9px;
+
+        letter-spacing: 2px;
+
+        margin-bottom: 17px;
+    }
+
+
+    .articles-header h2 {
+        font-size: 38px;
+
+        line-height: 1.06;
+
+        letter-spacing: -0.8px;
+    }
+
+
+    .articles-header p {
+        font-size: 10px;
+
+        line-height: 1.7;
+
+        margin-top: 20px;
+
+        max-width: 340px;
+    }
+
+
+    /* GRID */
+
+    .articles-grid {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+
+    /* ARTICLE CONTENT */
+
+    .article-content {
+        padding: 27px 22px 30px;
+    }
+
+
+    .article-category {
+        font-size: 8px;
+
+        letter-spacing: 2px;
+
+        margin-bottom: 15px;
+    }
+
+
+    .article-content h3 {
+        font-size: 29px;
+
+        line-height: 1.08;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .article-content p {
+        font-size: 10px;
+
+        line-height: 1.8;
+    }
+
+
+    /* NUMBER */
+
+    .article-number {
+        top: 15px;
+
+        left: 15px;
+
+        width: 36px;
+
+        height: 36px;
+
+        font-size: 15px;
+    }
+
+
+    /* FOOTNOTE */
+
+    .articles-note {
+        margin-top: 35px;
+
+        gap: 10px;
+
+        align-items: flex-start;
+    }
+
+
+    .articles-note > span {
+        margin-top: 7px;
+
+        width: 20px;
+
+        flex-basis: 20px;
+    }
+
+
+    .articles-note p {
+        max-width: 280px;
+
+        font-size: 8px;
+
+        line-height: 1.6;
+    }
+
+}

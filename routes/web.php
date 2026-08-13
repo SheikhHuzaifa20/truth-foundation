@@ -3,6 +3,8 @@
 
 
 
+
+use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\TestimonialController;
 use App\Http\Controllers\Admin\TestimonialsController;
 use App\Http\Controllers\Admin\NewsController;
@@ -109,6 +111,8 @@ Route::get('online-classes/{id?}','HomeController@online_classes')->name('classe
 Route::get('learn-to-play','HomeController@play')->name('play');
 // Route::get('store','HomeController@store')->name('store');
 Route::get('contact','HomeController@contact')->name('contact');
+Route::get('/articles/{id}', 'HomeController@articlesDetail')->name('articles_detail');
+Route::any('/inquiry/store', 'HomeController@store')->name('inquiry.store');
 
 
 
@@ -386,5 +390,20 @@ Route::middleware(['auth', 'role:1,2']) // Only super_admin & admin can access /
         Route::get('activity-log/{activityLog}', [ActivityLogController::class, 'show'])->name('admin.activity-log.show');
     });
 
+
+    // 🧩 Blog Management
+    Route::middleware('permission:manage_blog')->group(function () {
+        Route::get('blog/data', [BlogController::class, 'getData'])->name('admin.blog.data');
+        Route::post('blog/{blog}/toggle-status', [BlogController::class, 'toggleStatus'])->name('admin.blog.toggleStatus');
+        Route::get('blog/trash', [BlogController::class, 'trash'])->name('admin.blog.trash');
+        Route::get('blog/trash/data', [BlogController::class, 'getTrashedData'])->name('admin.blog.trash.data');
+        Route::post('blog/{id}/restore', [BlogController::class, 'restore'])->name('admin.blog.restore');
+        Route::delete('blog/{id}/force-delete', [BlogController::class, 'forceDelete'])->name('admin.blog.forceDelete');
+        Route::delete('blog/bulk-delete', [BlogController::class, 'bulkDelete'])->name('admin.blog.bulkDelete');
+        Route::post('blog/bulk-restore', [BlogController::class, 'bulkRestore'])->name('admin.blog.bulkRestore');
+        Route::delete('blog/bulk-force-delete', [BlogController::class, 'bulkForceDelete'])->name('admin.blog.bulkForceDelete');
+        Route::post('admin/blog/sort', [BlogController::class, 'sort'])->name('admin.blog.sort');
+        Route::resource('blog', BlogController::class)->names('admin.blog');
+    });
 });
 require __DIR__.'/auth.php';

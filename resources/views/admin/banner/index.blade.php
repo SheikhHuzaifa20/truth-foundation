@@ -13,7 +13,7 @@
             </div>
         </div>
     </div>
-    <div class="content-header-right col-md-6 col-12">
+    {{-- <div class="content-header-right col-md-6 col-12">
         <div class="btn-group float-md-right">
             @canAccess('delete_banner')
                 <button id="bulkDelete" class="btn btn-danger mr-1 mb-1">Delete Selected</button>
@@ -27,7 +27,7 @@
                 <a class="btn btn-warning ml-1 mb-1" href="{{ route('admin.banner.trash') }}">View Trashed Banners</a>
             @endcanAccess
         </div>
-    </div>
+    </div> --}}
 </div>
 
 <section id="configuration">
@@ -35,10 +35,10 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Banner List</h4>
+                    <h4 class="card-title">Banner</h4>
                 </div>
                 <div class="card-body card-dashboard">
-                    <div class="row mb-4 align-items-end">
+                    {{-- <div class="row mb-4 align-items-end">
                         <div class="col-md-2">
                             <label>Status</label>
                             <select id="statusFilter" class="form-control">
@@ -61,7 +61,7 @@
                         <div class="col-md-2">
                             <button id="resetFilters" class="btn btn-secondary">Reset</button>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="table-responsive">
                         <table class="table table-striped table-bordered yajra-datatable">
                             <thead>
@@ -70,7 +70,7 @@
                                     <th>S.No</th>
                                     <th>Title</th>
                                     <th>Image</th>
-                                    <th>Status</th>
+                                    {{-- <th>Status</th> --}}
                                     <th>Created At</th>
                                     <th class="text-center">Sort</th>
                                     <th>Action</th>
@@ -119,7 +119,7 @@ $(function() {
             },
             {data: 'title', name: 'title'},
             {data: 'image', name: 'image', orderable: false, searchable: false},
-            {data: 'status', name: 'status', orderable: false, searchable: false},
+            // {data: 'status', name: 'status', orderable: false, searchable: false},
             {
                 data: 'created_at',
                 name: 'created_at'

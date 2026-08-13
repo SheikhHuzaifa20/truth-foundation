@@ -108,6 +108,10 @@
     }
     if($('#summary-ckeditor2').length != 0){
         CKEDITOR.replace( 'summary-ckeditor2' );
+    }if($('#summary-ckeditor3').length != 0){
+        CKEDITOR.replace( 'summary-ckeditor3' );
+    }if($('#summary-ckeditor4').length != 0){
+        CKEDITOR.replace( 'summary-ckeditor4' );
     }
 </script>
 

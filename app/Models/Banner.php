@@ -27,7 +27,7 @@ class Banner extends Model
      *
      * @var array
      */
-    protected $fillable = ['title', 'description', 'image', 'status', 'sort_order'];
+    protected $fillable = ['title','heading', 'description', 'image', 'status', 'sort_order'];
 
     protected $dates = ['deleted_at'];
 }

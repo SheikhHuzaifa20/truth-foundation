@@ -43,9 +43,9 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Form Name</th>
-                                        <th>Name</th>
-                                        <th>Email</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Subject</th>
                                         <th>Message</th>
                                         <th>Action</th>
                                     </tr>
@@ -82,9 +82,9 @@ $(function() {
                         return `<input type="checkbox" class="rowCheckbox" value="${data}">`;
                     }
                 },
-                { data: 'form_name', name: 'form_name' },
                 { data: 'fname', name: 'fname' },
-                { data: 'email', name: 'email' },
+                { data: 'lname', name: 'lname' },
+                { data: 'extra_content', name: 'extra_content' },
                 { data: 'notes', name: 'notes', orderable: false, searchable: false },
                 { data: 'action', name: 'action', orderable: false, searchable: false },
             ],

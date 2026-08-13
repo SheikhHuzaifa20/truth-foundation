@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use App\Models\Blog;
+use App\Observers\BlogObserver;
+
 use App\Models\Testimonial;
 use App\Observers\TestimonialObserver;
 

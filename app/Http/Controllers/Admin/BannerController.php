@@ -40,15 +40,15 @@ class BannerController extends Controller
             ->addColumn('image', function ($row) {
                 return '<img src="'.asset($row->image).'" width="120">';
             })
-            ->addColumn('status', function ($row) {
-                $checked = $row->status ? 'checked' : '';
-                return '
-                    <label class="switch">
-                        <input type="checkbox" class="toggleBannerStatus" data-id="' . $row->id . '" ' . $checked . '>
-                        <span class="slider round" title="Click to toggle status"></span>
-                    </label>
-                ';
-            })
+            // ->addColumn('status', function ($row) {
+            //     $checked = $row->status ? 'checked' : '';
+            //     return '
+            //         <label class="switch">
+            //             <input type="checkbox" class="toggleBannerStatus" data-id="' . $row->id . '" ' . $checked . '>
+            //             <span class="slider round" title="Click to toggle status"></span>
+            //         </label>
+            //     ';
+            // })
             ->addColumn('created_at', function ($row) {
                 return $row->created_at ? $row->created_at->format('d M, Y h:i A') : '-';
             })
@@ -60,15 +60,15 @@ class BannerController extends Controller
                                     <i class="la la-pencil"></i>
                                 </a> ';
                 }
-                if (auth()->user()->hasPermission('delete_banner')) {
-                    $actions .= '<button class="btn btn-sm btn-danger deleteBanner"
-                                    data-id="' . $row->id . '" title="Delete User">
-                                    <i class="la la-trash"></i>
-                                </button>';
-                }
+                // if (auth()->user()->hasPermission('delete_banner')) {
+                //     $actions .= '<button class="btn btn-sm btn-danger deleteBanner"
+                //                     data-id="' . $row->id . '" title="Delete User">
+                //                     <i class="la la-trash"></i>
+                //                 </button>';
+                // }
                 return $actions ?: '<span class="text-muted">No actions</span>';
             })
-            ->rawColumns(['image', 'status', 'action'])
+            ->rawColumns(['image',  'action'])
             ->make(true);
     }
 
@@ -104,6 +104,7 @@ class BannerController extends Controller
     public function update(UpdateBannerRequest $request, Banner $banner)
     {
         $data = $request->validated();
+        $data['heading'] = $request->heading;
 
         $oldData = $banner->toArray();
 

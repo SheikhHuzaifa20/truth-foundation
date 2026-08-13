@@ -1,0 +1,1593 @@
+/* =========================================
+   SITE HEADER
+   LOGO + MENU
+========================================= */
+
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100px;
+
+    z-index: 100;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.site-header .author-logo {
+    position: absolute;
+
+    top: 20px;
+    left: 50px;
+
+    z-index: 101;
+
+    pointer-events: auto;
+}
+
+.site-header .author-logo img {
+    width: 140px;
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================================
+   MENU
+========================================= */
+
+.site-header .menu-button {
+    position: absolute;
+
+    top: 31px;
+    right: 51px;
+
+    z-index: 101;
+
+    pointer-events: auto;
+}
+
+/* =========================================
+   AUTHOR HERO SECTION
+========================================= */
+
+.author-section {
+    height: 950px;
+}
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.author-content {
+    position: relative;
+    /* height: 850px; */
+    background: #f1f2ed;
+    /* overflow: hidden; */
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.author-logo {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    z-index: 5;
+}
+
+.author-logo img {
+    width: 140px;
+    height: auto;
+    display: block;
+}
+
+
+/* =========================================
+   LEFT TEXT AREA
+========================================= */
+
+.author-text {
+    position: absolute;
+    left: 50px;
+    right: 35px;
+    top: 50%;
+    /* transform: translateY(-40%); */
+}
+
+
+/* =========================================
+   LARGE QM
+========================================= */
+
+.author-monogram {
+    margin-left: -30px;
+    margin-bottom: 25px;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(220px, 21vw, 365px);
+    font-weight: 500;
+    line-height: 0.78;
+    letter-spacing: -28px;
+    color: #c9630d;
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   NAME
+========================================= */
+
+.author-text h1 {
+    margin: 0;
+    padding-top: 55px;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(58px, 5vw, 82px);
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    color: #050505;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.author-text p {
+    width: 365px;
+    max-width: 100%;
+
+    margin-top: 34px;
+    margin-bottom: 0;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 400;
+
+    line-height: 1.45;
+
+    color: #151515;
+}
+
+
+/* =========================================
+   RIGHT IMAGE AREA
+========================================= */
+
+.author-image-wrapper {
+    position: relative;
+    z-index: -1;
+    /*height: 100vh;*/
+    /*min-height: 650px;*/
+    background: #e8e9eb;
+    /*overflow: hidden;*/
+}
+
+
+/* =========================================
+   AUTHOR IMAGE
+========================================= */
+
+.author-img {
+    width: 100%;
+    height: 94%;
+    margin-top: 60px;
+}
+
+
+/* =========================================
+   MENU BUTTON
+========================================= */
+
+.menu-button {
+    position: absolute;
+
+    top: 31px;
+    right: 51px;
+
+    z-index: 10;
+
+    width: 27px;
+    height: 22px;
+
+    padding: 0;
+
+    border: 0;
+    outline: none;
+
+    background: transparent;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+    gap: 4px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   MENU LINES
+========================================= */
+
+.menu-button span {
+    display: block;
+
+    height: 1px;
+
+    background: #14232d;
+
+    transition: all 0.25s ease;
+}
+
+.menu-button span:nth-child(1) {
+    width: 20px;
+}
+
+.menu-button span:nth-child(2) {
+    width: 27px;
+}
+
+.menu-button span:nth-child(3) {
+    width: 17px;
+}
+
+
+/* =========================================
+   MENU HOVER
+========================================= */
+
+.menu-button:hover span:nth-child(1) {
+    width: 27px;
+}
+
+.menu-button:hover span:nth-child(2) {
+    width: 20px;
+}
+
+.menu-button:hover span:nth-child(3) {
+    width: 24px;
+}
+
+
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about-section {
+    font-family: "Manrope", sans-serif;
+    background: #f1f2ed;
+    position: relative;
+    height: 700px;
+}
+
+
+/* =========================================
+   ORANGE LEFT SIDE
+========================================= */
+
+.about-orange {
+    background: #d37924;
+}
+
+
+/* =========================================
+   MAIN RIGHT AREA
+========================================= */
+
+.about-main {
+    background: #f1f2ed;
+    position: relative;
+}
+
+
+/* =========================================
+   ABOUT IMAGE
+========================================= */
+
+.about-image-wrapper {
+    position: absolute;
+
+    top: 82px;
+    left: -237px;
+
+    width: 410px;
+    height: 546px;
+
+    z-index: 2;
+
+    background: #ffffff;
+
+    padding: 6px;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.about-img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    /* object-fit: cover; */
+}
+
+
+/* =========================================
+   ABOUT TEXT
+========================================= */
+
+.about-content {
+    position: absolute;
+    left: 250px;
+    top: 50%;
+    width: 500px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.about-content h2 {
+    margin: 0 0 25px 0;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 56px;
+
+    font-weight: 400;
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    color: #050505;
+}
+
+
+/* =========================================
+   PARAGRAPHS
+========================================= */
+
+.about-content p {
+    margin: 0 0 22px 0;
+
+    width: 500px;
+    max-width: 100%;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    color: #333333;
+}
+
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================================
+   HAPPY CUSTOMERS SECTION
+========================================= */
+
+.customers-section {
+    width: 100%;
+    padding: clamp(70px, 8vw, 110px) 0;
+    background-image: url("../images/background-2.png");
+    overflow: hidden;
+    font-family: "Manrope", sans-serif;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.customers-container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.customers-header {
+    max-width: 680px;
+    margin: 0 auto clamp(45px, 6vw, 70px);
+    text-align: center;
+}
+
+
+.customers-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 16px;
+
+    color: #c86a20;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+
+.customers-label::before,
+.customers-label::after {
+    content: "";
+
+    width: 24px;
+    height: 1px;
+
+    background: #c86a20;
+}
+
+
+.customers-title {
+    margin: 0;
+
+    color: #111111;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(38px, 5vw, 58px);
+    font-weight: 400;
+    line-height: 1.08;
+}
+
+
+.customers-intro {
+    max-width: 520px;
+
+    margin: 18px auto 0;
+
+    color: #77736f;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   SLIDER
+========================================= */
+
+.customers-slider {
+    width: 100%;
+    overflow: hidden;
+
+    padding: 5px 0 12px;
+}
+
+
+.customers-track {
+    display: flex;
+    align-items: stretch;
+    gap: 22px;
+
+    width: max-content;
+
+    animation: customersSlider 28s linear infinite;
+}
+
+
+.customers-slider:hover .customers-track {
+    animation-play-state: paused;
+}
+
+
+/* =========================================
+   SLIDER ANIMATION
+========================================= */
+
+.customers-slider {
+    width: 100%;
+    overflow: hidden;
+    padding: 5px 0 12px;
+}
+
+.customers-track {
+    display: flex;
+    align-items: stretch;
+    gap: 22px;
+    width: max-content;
+
+    will-change: transform;
+}
+
+.customers-track .customer-card {
+    flex: 0 0 320px;
+}
+
+@media (max-width: 991.98px) {
+    .customers-track {
+        gap: 18px;
+    }
+
+    .customers-track .customer-card {
+        flex-basis: 300px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .customers-track {
+        gap: 15px;
+    }
+
+    .customers-track .customer-card {
+        flex-basis: min(290px, calc(100vw - 50px));
+    }
+}
+
+
+/* =========================================
+   CUSTOMER CARD
+========================================= */
+
+.customer-card {
+    flex: 0 0 320px;
+
+    box-sizing: border-box;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 2px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.045);
+
+    transition:
+        transform 0.35s ease,
+        background-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.customer-card:hover {
+    background: #d06b12;
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.customer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+
+.customer-stars {
+    width: 86px;
+    height: auto;
+
+    display: block;
+}
+
+
+.customer-quote {
+    color: #d06b12;
+
+    font-family: "Playfair Display", serif;
+    font-size: 46px;
+    line-height: 0.6;
+
+    transition: color 0.3s ease;
+}
+
+
+.customer-card:hover .customer-quote {
+    color: #111111;
+}
+
+
+/* =========================================
+   CARD HEADING
+========================================= */
+
+.customer-heading {
+    margin: 0 0 17px;
+
+    color: #222222;
+
+    font-family: "Playfair Display", serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.35;
+
+    transition: color 0.3s ease;
+}
+
+
+.customer-card:hover .customer-heading {
+    color: #111111;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.customer-card p {
+    margin: 0;
+
+    color: #888888;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.8;
+
+    transition: color 0.3s ease;
+}
+
+
+.customer-card:hover p {
+    color: rgba(17, 17, 17, 0.78);
+}
+
+
+/* =========================================
+   PROFILE
+========================================= */
+
+.customer-profile {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 30px;
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+
+.customer-card:hover .customer-profile {
+    border-color: rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================
+   PROFILE IMAGE
+========================================= */
+
+.customer-img {
+    width: 48px;
+    aspect-ratio: 1;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 50%;
+
+    border: 2px solid #ffffff;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   PROFILE INFO
+========================================= */
+
+.customer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.customer-info span {
+    color: #222222;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    transition: color 0.3s ease;
+}
+
+
+.customer-info small {
+    color: #999999;
+
+    font-size: 10px;
+    font-weight: 400;
+
+    transition: color 0.3s ease;
+}
+
+
+.customer-card:hover .customer-info span,
+.customer-card:hover .customer-info small {
+    color: #111111;
+}
+
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+.contact-section {
+    position: relative;
+
+    width: 100%;
+    height: 700px;
+
+    overflow: hidden;
+
+    background: #f1f2ed;
+
+    font-family: "Manrope", sans-serif;
+}
+
+
+/* =========================================
+   ORANGE LEFT AREA
+========================================= */
+
+.contact-orange {
+    height: 700px;
+
+    background: linear-gradient(to bottom,
+            #d37924 0%,
+            #bd4d08 100%);
+}
+
+
+/* =========================================
+   MAIN CONTACT AREA
+========================================= */
+
+.contact-main {
+    position: relative;
+
+    height: 700px;
+
+    background: #f1f2ed;
+}
+
+
+/* =========================================
+   CONTACT FORM BOX
+========================================= */
+
+.contact-form-box {
+    position: absolute;
+
+    top: 86px;
+    left: -326px;
+
+    width: 578px;
+    height: 528px;
+
+    padding: 48px 44px;
+
+    background: #ffffff;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   CONTACT HEADING
+========================================= */
+
+.contact-form-box h2 {
+    margin: 0 0 34px 0;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 52px;
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    color: #050505;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.contact-form-box form {
+    width: 100%;
+}
+
+
+/* =========================================
+   FIRST / LAST NAME
+========================================= */
+
+.contact-name-row {
+    display: flex;
+
+    gap: 8px;
+
+    margin-bottom: 14px;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.contact-form-box input,
+.contact-form-box textarea {
+    width: 100%;
+
+    padding: 0 11px;
+
+    border: 1px solid #d4d4d4;
+
+    border-radius: 0;
+
+    outline: none;
+
+    background: #ffffff;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 11px;
+
+    color: #111;
+
+    box-sizing: border-box;
+}
+
+
+.contact-form-box input {
+    height: 44px;
+
+    margin-bottom: 14px;
+}
+
+
+.contact-name-row input {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+.contact-form-box textarea {
+    height: 144px;
+
+    padding-top: 13px;
+
+    resize: none;
+
+    display: block;
+
+    margin-bottom: 27px;
+}
+
+
+/* =========================================
+   PLACEHOLDER
+========================================= */
+
+.contact-form-box input::placeholder,
+.contact-form-box textarea::placeholder {
+    color: #222;
+
+    opacity: 1;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.contact-form-box button {
+    width: 155px;
+    height: 43px;
+
+    border: 0;
+    border-radius: 0;
+
+    background: linear-gradient(181deg, #d17722, #ae4808);
+
+    color: #050505;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition: background 0.25s ease;
+}
+
+
+.contact-form-box button:hover {
+    background: #d06b12;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   GET IN TOUCH
+========================================= */
+
+.contact-info {
+    position: absolute;
+    top: 150px;
+    left: 298px;
+    width: 50%;
+}
+
+
+/* =========================================
+   GET IN TOUCH HEADING
+========================================= */
+
+.contact-info h3 {
+    margin: 0 0 40px 0;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 38px;
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    color: #050505;
+}
+
+
+/* =========================================
+   INTRO TEXT
+========================================= */
+
+.contact-info p {
+    margin: 0 0 63px 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.8;
+    color: #111;
+}
+
+
+/* =========================================
+   CONTACT ITEM
+========================================= */
+
+.contact-item {
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 31px;
+}
+
+
+/* =========================================
+   CONTACT ICON
+========================================= */
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #ead5c0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.contact-icon img {
+    width: 22px;
+    height: 22px;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* =========================================
+   CONTACT TEXT
+========================================= */
+
+.contact-item-text {
+    margin-left: 24px;
+}
+
+
+.contact-item-text p {
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    line-height: 2;
+    color: #111;
+    width: 170px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.site-footer {
+    width: 100%;
+
+    height: 74px;
+
+    background: #000000;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.site-footer p {
+    margin: 0;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 11px;
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+
+.site-footer span {
+    color: #d4b900;
+}
+
+
+
+/* =========================================
+   ARTICLES SECTION
+========================================= */
+
+.articles-section {
+    width: 100%;
+
+    padding: 110px 0 120px;
+
+    background: #f1f2ed;
+
+    color: #050505;
+
+    font-family: "Manrope", sans-serif;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   ARTICLES CONTAINER
+========================================= */
+
+.articles-container {
+    width: 100%;
+
+    max-width: 1080px;
+
+    margin: 0 auto;
+
+    padding: 0 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   ARTICLES HEADER
+========================================= */
+
+.articles-header {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    margin-bottom: 70px;
+}
+
+
+/* =========================================
+   MY ARTICLES LABEL
+========================================= */
+
+.articles-label {
+    display: block;
+
+    margin: 0 0 22px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    line-height: 1;
+
+    color: #c9630d;
+
+    text-transform: uppercase;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   MAIN ARTICLES HEADING
+========================================= */
+
+.articles-header h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 58px;
+
+    font-weight: 400;
+
+    line-height: 1.02;
+
+    letter-spacing: -2px;
+
+    color: #050505;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   HEADER DESCRIPTION
+========================================= */
+
+.articles-header p {
+    width: 100%;
+
+    max-width: 470px;
+
+    margin: 28px auto 0;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    line-height: 1.7;
+
+    color: #555555;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   ARTICLES GRID
+========================================= */
+
+.articles-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 28px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================
+   ARTICLE CARD
+========================================= */
+
+.article-card {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: #ffffff;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+/* =========================================
+   ARTICLE CARD HOVER
+========================================= */
+
+.article-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================
+   ARTICLE IMAGE
+========================================= */
+
+.article-image {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    background: #deded9;
+}
+
+
+/* =========================================
+   ARTICLE IMAGE IMG
+========================================= */
+
+.article-image img {
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 1.35 / 1;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+
+/* =========================================
+   IMAGE HOVER
+========================================= */
+
+.article-card:hover .article-image img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   ARTICLE NUMBER
+========================================= */
+
+.article-number {
+    position: absolute;
+
+    top: 20px;
+
+    left: 20px;
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #d37924;
+
+    color: #ffffff;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 17px;
+
+    line-height: 1;
+}
+
+
+/* =========================================
+   ARTICLE CONTENT
+========================================= */
+
+.article-content {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+    padding: 38px 36px 40px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   ARTICLE CATEGORY
+========================================= */
+
+.article-category {
+    display: block;
+
+    margin-bottom: 16px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+
+    line-height: 1.2;
+
+    color: #c9630d;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   ARTICLE HEADING
+========================================= */
+
+.article-content h3 {
+    margin: 0 0 22px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 36px;
+
+    font-weight: 400;
+
+    line-height: 1.08;
+
+    letter-spacing: -1px;
+
+    color: #050505;
+}
+
+
+/* =========================================
+   ARTICLE PARAGRAPHS
+========================================= */
+
+.article-content p {
+    margin: 0 0 16px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 400;
+
+    line-height: 1.8;
+
+    color: #666666;
+}
+
+
+/* =========================================
+   LAST PARAGRAPH
+========================================= */
+
+.article-content p:last-of-type {
+    margin-bottom: 28px;
+}
+
+
+/* =========================================
+   ARTICLE LINK
+========================================= */
+
+.article-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    align-self: flex-start;
+
+    padding-bottom: 7px;
+
+    border-bottom: 1px solid #c9630d;
+
+    color: #111111;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    transition:
+        color 0.25s ease,
+        gap 0.25s ease;
+}
+
+
+/* =========================================
+   LINK ARROW
+========================================= */
+
+.article-link span {
+    color: #c9630d;
+
+    font-size: 15px;
+
+    line-height: 1;
+
+    transition: transform 0.25s ease;
+}
+
+
+/* =========================================
+   LINK HOVER
+========================================= */
+
+.article-link:hover {
+    color: #c9630d;
+
+    gap: 17px;
+}
+
+
+.article-link:hover span {
+    transform: translate(3px, -3px);
+}
+
+
+/* =========================================
+   ARTICLE FOOTNOTE
+========================================= */
+
+.articles-note {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 55px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   FOOTNOTE LINE
+========================================= */
+
+.articles-note>span {
+    display: block;
+
+    width: 35px;
+
+    height: 1px;
+
+    flex: 0 0 35px;
+
+    background: #c9630d;
+}
+
+
+/* =========================================
+   FOOTNOTE TEXT
+========================================= */
+
+.articles-note p {
+    margin: 0;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 9px;
+
+    font-style: italic;
+
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    color: #999999;
+
+    text-align: center;
+}
+
+.articles-heading-wrap {
+    margin: auto;
+    width: 600px;
+}

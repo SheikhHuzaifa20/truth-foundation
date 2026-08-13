@@ -78,6 +78,18 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="customer_name">Customer Name</label>
+                                                <input class="form-control" required name="customer_name" type="text" id="customer_name" value="{{ $testimonial->customer_name }}">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="customer_profession">Customer Profession</label>
+                                                <input class="form-control" required name="customer_profession" type="text" id="customer_profession" value="{{ $testimonial->customer_profession }}">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form-actions text-right pb-0">
