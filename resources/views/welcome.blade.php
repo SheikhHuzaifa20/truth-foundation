@@ -100,7 +100,7 @@
                 </span>
 
                 <h2 class="customers-title">
-                    My Happy Customers
+                    {{$section[0]->value}}
                 </h2>
 
             </div>
@@ -188,20 +188,20 @@
                 <div class="articles-heading-wrap">
 
                     <span class="articles-label">
-                        {{ $article->page_name }}
+                        MY ARTICLES
                     </span>
 
                     <h2>
-                        {{ $article->name }}
+                        {{$section[1]->value}}
                     </h2>
 
                 </div>
 
 
                 <!-- RIGHT SIDE -->
-                <div class="articles-header-description">
+                <div class="articles-header-description mt-3" style="width: 600px;">
 
-                    {!! $article->content !!}
+                    {!! $section[2]->value !!}
 
                 </div>
 
@@ -284,7 +284,7 @@
                     <!-- CONTACT FORM BOX -->
                     <div class="contact-form-box">
 
-                        <h2>{{ $contact->page_name }}</h2>
+                        <h2>{{ $section[3]->value }}</h2>
 
                         <form action="{{ route('inquiry.store') }}" method="POST">
                             @csrf
@@ -313,9 +313,9 @@
                     <!-- GET IN TOUCH -->
                     <div class="contact-info">
 
-                        <h3>{{ $contact->name }}</h3>
+                        <h3>{{ $section[4]->value }}</h3>
 
-                        {!! $contact->content !!}
+                        {!! $section[5]->value !!}
 
 
                         <!-- LOCATION -->

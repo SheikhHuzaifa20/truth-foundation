@@ -55,17 +55,18 @@ class HomeController extends Controller
     public function index()
     {
 
+        $about = DB::table('pages')->where('id', 2)->first();
+        $section = DB::table('sections')->where('page_id', 2)->get();
         $banner = DB::table('banners')->where('id', 1)->first();
         $phone = DB::table('m_flag')->where('id', 1)->first();
         $email = DB::table('m_flag')->where('id', 2)->first();
         $location = DB::table('m_flag')->where('id', 4)->first();
-        $about = DB::table('pages')->where('id', 2)->first();
         $testimonial = DB::table('testimonial')->where('status', 1)->get();
         $contact = DB::table('pages')->where('id', 4)->first();
         $article = DB::table('pages')->where('id', 1)->first();
         $blog = DB::table('blog')->where('status', 1)->get();
 
-        return view('welcome', compact('article', 'blog', 'banner', 'email', 'phone', 'location', 'about', 'testimonial', 'contact'));
+        return view('welcome', compact('article','section', 'blog', 'banner', 'email', 'phone', 'location', 'about', 'testimonial', 'contact'));
     }
 
     public function articlesDetail($id)
