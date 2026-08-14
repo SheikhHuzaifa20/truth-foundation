@@ -8,7 +8,7 @@
             <div class="row g-0 h-100">
 
                 <!-- LEFT SIDE -->
-                <div class="col-lg-6 author-content">
+                <div class="col-lg-6 col-md-6 col-12 author-content">
 
                     <div class="author-text">
 
@@ -27,7 +27,7 @@
 
 
                 <!-- RIGHT SIDE -->
-                <div class="col-lg-6 author-image-wrapper">
+                <div class="col-lg-6 col-md-6 col-12 author-image-wrapper">
 
                     <img src="{{ $banner->image }}" alt="Qiu Min Ji" class="author-img">
 
@@ -51,11 +51,11 @@
             <div class="row g-0 h-100">
 
                 <!-- LEFT ORANGE AREA -->
-                <div class="col-lg-4 about-orange"></div>
+                <div class="col-lg-4 col-md-4 col-12 about-orange"></div>
 
 
                 <!-- RIGHT CONTENT AREA -->
-                <div class="col-lg-8 about-main">
+                <div class="col-lg-8 col-md-8 col-12 about-main">
 
                     <!-- ABOUT IMAGE -->
                     <div class="about-image-wrapper">
@@ -275,11 +275,11 @@
             <div class="row g-0 h-100">
 
                 <!-- ORANGE BACKGROUND -->
-                <div class="col-lg-4 contact-orange"></div>
+                <div class="col-lg-4 col-md-4 col-12 contact-orange"></div>
 
 
                 <!-- CONTACT MAIN AREA -->
-                <div class="col-lg-8 contact-main">
+                <div class="col-lg-8 col-md-8 col-12 contact-main">
 
                     <!-- CONTACT FORM BOX -->
                     <div class="contact-form-box">
