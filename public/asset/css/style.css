@@ -1591,3 +1591,7 @@
     margin: auto;
     width: 600px;
 }
+
+section .row {
+    overflow: hidden;
+}
