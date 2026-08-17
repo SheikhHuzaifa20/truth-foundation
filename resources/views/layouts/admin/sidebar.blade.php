@@ -45,13 +45,13 @@
                     @endcanAccess
 
                     {{-- User Management --}}
-                    @canAccess('view_users')
+                    {{-- @canAccess('view_users')
                     <li class="{{ request()->routeIs('admin.users.*') ? 'active' : '' }}">
                         <a class="menu-item" href="{{ route('admin.users.index') }}">
                             <i></i><span>User Management</span>
                         </a>
                     </li>
-                    @endcanAccess
+                    @endcanAccess --}}
 
                     {{-- Role Management --}}
                     {{-- @canAccess('manage_roles')
